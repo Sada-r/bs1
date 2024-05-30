@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: my-api
+  description: My API description
+  owner: team@example.com
+  tags:
+    - api
+    - example
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team@example.com
+  definition: ../../openapi-specs/my-api/openapi.yaml
+  system: my-system

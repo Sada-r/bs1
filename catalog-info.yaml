@@ -1,0 +1,79 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-app
+  description: An example of a Backstage application.
+  # Example for optional annotations
+  annotations:
+    github.com/project-slug: backstage/backstage
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service 
+  owner: john@example.com
+  lifecycle: experimental
+
+# apiVersion: backstage.io/v1alpha1
+# kind: API
+# metadata:
+#   name: petstore
+#   description: The petstore API
+#   tags:
+#     - store
+#     - rest
+#   links:
+#     - url: https://github.com/swagger-api/swagger-petstore
+#       title: GitHub Repo
+#       icon: github
+#     - url: https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml
+#       title: API Spec
+#       icon: code
+# spec:
+#   type: openapi
+#   lifecycle: dev
+#   owner: Harness_Partners
+#   definition:
+#     $text: ./petstore.oas.yaml
+
+#   apiDefinitions:
+#   - path: https://github.com/Sadasiva-Rout/demo-backstage-api/blob/master/catalog-info.yaml
+
+
+# apiVersion: backstage.io/v1alpha1
+# kind: API
+# metadata:
+#   name: ce-nextgen
+#   description: The official CE NEXTGEN service REST APIs
+# spec: 
+#   type: openapi
+#   lifecycle: production
+#   owner: johndoe
+#   definition:
+#     $text: https://github.com/OAI/OpenAPI-Specification/blob/main/examples/v2.0/json/api-with-examples.json
+
+# apiDocs:
+#   # - path: '/openapi.yaml'  # Path to your OpenAPI specification file
+#   - path: '/openapi-specs/my-api/openapi.yaml'  # Path to your OpenAPI specification file
+#     title: 'booksApi'
+#     type: openapi
+
+apiDocs:
+  - path: '../../openapi-specs/my-api/openapi.yaml'  # Path to your OpenAPI specification file
+    title: 'bsooksApi'
+    type: openapi
+
+    
+# apiVersion: backstage.io/v1alpha1
+# kind: API
+# metadata:
+#   name: book-api1
+#   description: API for managing books
+#   owner: team-a
+# spec:
+#   type: openapi
+#   lifecycle: production
+#   owner: team-a
+#   # definition:
+#   #   type: url
+#   #   url: http://localhost:3003/swagger.json # URL to your API documentation (swagger or openapi spec)
+#   definition:
+#     $text: https://github.com/Sada-r/open-api/blob/main/openapi.json

@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: book-test-api1
+  description: The official CE NEXTGEN service REST APIs
+spec:
+  type: openapi
+  lifecycle: production
+  owner: Sada1
+  definition:
+    $text: https://github.com/Sada-r/test-open-api/blob/main/book1-openapi.json

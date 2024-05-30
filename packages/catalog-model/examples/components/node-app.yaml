@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "node-app"
+  annotations:
+    # github.com/project-slung: Sada-r/node-app
+    # backstage.io/techdocs-ref: dir:.
+    backstage.io/source-template: template:default/node-app
+    backstage.io/linguist: https://github.com/Sada-r/node-app/tree/master/
+spec:
+  type: website
+  owner: guests
+  lifecycle: unknown
+  ststem: test-app
+  providesApis:
+    - 'Api:book-api'
+    - 'Api:book-test-api1'

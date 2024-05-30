@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "ex1-plugin-component"
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/source-template: template:default/my-test-ex1-plugin-component
+    backstage.io/linguist: https://github.com/Sada-r/my-test-ex1-plugin-component/tree/main
+spec:
+  type: service
+  owner: Sada
+  lifecycle: production
+  ststem: test-app
+  providesApis:
+    - 'Api:book-api'
+
+
+# apiVersion: backstage.io/v1alpha1
+# kind: API
+# metadata:
+#   name: book-api
+#   description: API for managing books
+#   owner: Sada
+# spec:
+#   type: openapi
+#   lifecycle: production
+#   owner: Sada
+#   definition:
+#     $text: https://github.com/Sada-r/open-api/blob/main/openapi.json
+#   # apiConsumedBy: ['component:node-app']  

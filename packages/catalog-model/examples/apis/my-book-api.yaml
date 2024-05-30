@@ -1,0 +1,29 @@
+# apiVersion: backstage.io/v1alpha1
+# kind: API
+# metadata:
+#   name: books-api
+#   description: The official Book service REST APIs
+# spec:
+#   type: openapi
+#   lifecycle: production
+#   owner: Sada
+#   definition:
+#     $text: https://github.com/Sada-r/open-api/blob/main/openapi.json
+#   # apiConsumedBy: ['component:node-app']  
+
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: book-api
+  description: API for managing books
+  owner: Sada
+spec:
+  type: openapi
+  lifecycle: production
+  owner: Sada
+  # definition:
+  #   type: url
+  #   url: http://localhost:3003/swagger.json # URL to your API documentation (swagger or openapi spec)
+  definition:
+    $text: https://github.com/Sada-r/open-api/blob/main/openapi.json
+  # apiConsumedBy: ['component:node-app']  
