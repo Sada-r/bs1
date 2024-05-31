@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: My-Backstage-Webside
+  description: This is a dummy React app
+  tags:
+    - react
+    - web
+spec:
+  type: website
+  lifecycle: experimental
+  owner: guests
+  consumesApis:
+    - api:weather-api
+    - api:product-api
+    - api:Tier1-token-api
+    - api:Tier2-token-api
+  dependsOn:
+    - component:product-app
+    - component:weather-app  
+    - component:Token-Balance-App

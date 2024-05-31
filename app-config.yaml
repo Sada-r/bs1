@@ -43,7 +43,7 @@ integrations:
       # This is a Personal Access Token or PAT from GitHub. You can find out how to generate this token, and more information
       # about setting up the GitHub integration here: https://backstage.io/docs/integrations/github/locations#configuration
       # token: ${GITHUB_TOKEN}
-      token: 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
+      token: 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
     ### Example for how to add your GitHub Enterprise instance using the API:
     # - host: ghe.example.net
     #   apiBaseUrl: https://ghe.example.net/api/v3
@@ -161,14 +161,23 @@ catalog:
     - type: file
       target: ../catalog-model/examples/apis/book-test-api.yaml   
 
-    - type: file
-      target: ../catalog-model/examples/components/node-app.yaml
+    # - type: file
+    #   target: ../catalog-model/examples/components/node-app.yaml
 
     - type: file
       target: ../catalog-model/examples/components/my-ex1-plugin-component.yaml
 
     - type: file
-      target: ../catalog-model/examples/components/tokenBalance-app.yaml        
+      target: ../catalog-model/examples/components/tokenBalance-app.yaml
+
+    - type: file
+      target: ../catalog-model/examples/components/weather-app.yaml
+
+    - type: file
+      target: ../catalog-model/examples/components/product-app-component.yaml 
+
+    - type: file
+      target: ../catalog-model/examples/components/my-backstage-app-component.yaml             
 
     ## Uncomment these lines to add more example data
     # - type: url
